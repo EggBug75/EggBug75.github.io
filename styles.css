@@ -4,9 +4,8 @@ body{
     padding: 0px;
 }
 h3{
-    text-shadow: 0 0 4px rgb(114, 28, 76);
-    color:#6e6e6e
-   
+    color:#6e6e6e;
+    animation: naglowek 3s ease 0s infinite alternate none;
 }
 
 footer{
@@ -53,3 +52,10 @@ a:hover {
     65% {opacity: 0;}
     100% {opacity: 1;}
 }
+@keyframes naglowek 
+{
+0%{text-shadow: 0 0 2px rgb(114, 28, 76);}
+50%{text-shadow: 0 0 5px rgb(114, 28, 76);}
+100%{text-shadow: 0 0 2px rgb(114, 28, 76);}
+}
+
