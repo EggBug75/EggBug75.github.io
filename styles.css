@@ -54,8 +54,8 @@ a:hover {
 }
 @keyframes naglowek 
 {
-0%{text-shadow: 0 0 2px rgb(114, 28, 76);}
+0%{text-shadow: 0 0 1px rgb(114, 28, 76);}
 50%{text-shadow: 0 0 5px rgb(114, 28, 76);}
-100%{text-shadow: 0 0 2px rgb(114, 28, 76);}
+100%{text-shadow: 0 0 1px rgb(114, 28, 76);}
 }
 
