@@ -16,6 +16,8 @@ footer{
     position: absolute;
     bottom: 10px;
     width: 100%;
+    display: inline;
+    animation: blinker 4s linear infinite;
 }
 #container{
     height: 100%;
@@ -30,7 +32,24 @@ a{
     text-decoration: none;
     color:#9b9b9b;
     font-size: 20px;;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 a:hover {
-    text-shadow: 0 0 0.5px rgb(56, 216, 56);
+    animation: animation 7s ease 0s infinite alternate none;
+    
+}
+@keyframes animation{
+0% { margin-left: 0;text-shadow: 0 0 1px dodgerblue;}
+33% { margin-left: -5%;text-shadow: 0 0 1px crimson;}
+66% { margin-left: 0;text-shadow: 0 0 1px darkorange;}
+100% { margin-left: 5%;text-shadow: 0 0 1px limegreen;}}
+
+@keyframes blinker 
+{
+    0% {opacity: 1;}
+    15% {opacity: 0;}
+    30% {opacity: 1;}
+    65% {opacity: 0;}
+    100% {opacity: 1;}
 }
