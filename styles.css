@@ -6,6 +6,7 @@ body{
 h3{
     color:#6e6e6e;
     animation: naglowek 3s ease 0s infinite alternate none;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
 footer{
