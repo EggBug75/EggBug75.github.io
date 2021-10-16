@@ -36,14 +36,14 @@ a{
     padding-right: 50px;
 }
 a:hover {
-    animation: animation 7s ease 0s infinite alternate none;
+    animation: animation 5s ease 0s infinite alternate none;
     
 }
 @keyframes animation{
 0% { margin-left: 0;text-shadow: 0 0 1px dodgerblue;}
-33% { margin-left: -5%;text-shadow: 0 0 1px crimson;}
+33% { margin-left: -1%;text-shadow: 0 0 1px crimson;}
 66% { margin-left: 0;text-shadow: 0 0 1px darkorange;}
-100% { margin-left: 5%;text-shadow: 0 0 1px limegreen;}}
+100% { margin-left: 1%;text-shadow: 0 0 1px limegreen;}}
 
 @keyframes blinker 
 {
