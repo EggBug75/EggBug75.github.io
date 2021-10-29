@@ -4,7 +4,7 @@ body{
     padding: 0px;
 }
 h3{
-    color:#6e6e6e;
+    color:#00ff0d23;
     animation: naglowek 3s ease 0s infinite alternate none;
     font-family: 'Gemunu Libre', sans-serif;
 }
@@ -63,9 +63,11 @@ a:hover {
 }
 @keyframes naglowek 
 {
-0%{text-shadow: 0 0 1px rgb(114, 28, 76);}
-50%{text-shadow: 0 0 5px rgb(114, 28, 76);}
-100%{text-shadow: 0 0 1px rgb(114, 28, 76);}
+0%{text-shadow: 0 0 1px rgb(41, 178, 219);}
+40%{text-shadow: 0 0 2px rgb(41, 178, 219);}
+50%{text-shadow: 0 0 3.5px rgb(41, 178, 219);}
+60%{text-shadow: 0 0 2px rgb(41, 178, 219);}
+100%{text-shadow: 0 0 1px rgb(41, 178, 219);}
 }
 @keyframes neon 
 {
