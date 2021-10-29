@@ -1,7 +1,9 @@
 body{
-    background-color: rgb(20, 20, 20);
+    background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+    display: flex;
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 h3{
     color:#00ff0d23;
@@ -27,9 +29,12 @@ footer{
 }
 #top{
     height: 3px;
-    width: 100%;
+    width: 98%;
     background: linear-gradient(to left, #008aff,#00ffe7);
     animation: neon 5s linear infinite;
+    margin-left:1%;
+    margin-right:1%;
+    margin-top:7px;
 }
 #main{
 height: 95%;
@@ -48,10 +53,10 @@ a:hover {
     
 }
 @keyframes animation{
-0% { margin-left: 0;text-shadow: 0 0 1px dodgerblue;}
-33% { margin-left: -1%;text-shadow: 0 0 1px crimson;}
-66% { margin-left: 0;text-shadow: 0 0 1px darkorange;}
-100% { margin-left: 1%;text-shadow: 0 0 1px limegreen;}}
+0% {text-shadow: 0 0 1px dodgerblue;}
+33% {text-shadow: 0 0 2px crimson;}
+66% {text-shadow: 0 0 1px darkorange;}
+100% {text-shadow: 0 0 2px limegreen;}}
 
 @keyframes blinker 
 {
@@ -63,11 +68,11 @@ a:hover {
 }
 @keyframes naglowek 
 {
-0%{text-shadow: 0 0 1px rgb(41, 178, 219);}
-40%{text-shadow: 0 0 2px rgb(41, 178, 219);}
-50%{text-shadow: 0 0 3.5px rgb(41, 178, 219);}
-60%{text-shadow: 0 0 2px rgb(41, 178, 219);}
-100%{text-shadow: 0 0 1px rgb(41, 178, 219);}
+0%{text-shadow: 0 0 1px rgb(26, 136, 170);}
+40%{text-shadow: 0 0 2px rgb(26, 136, 170);}
+50%{text-shadow: 0 0 3.5px rgb(26, 136, 170);}
+60%{text-shadow: 0 0 2px rgb(26, 136, 170);}
+100%{text-shadow: 0 0 1px rgb(26, 136, 170);}
 }
 @keyframes neon 
 {
