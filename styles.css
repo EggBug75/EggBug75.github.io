@@ -37,9 +37,9 @@ footer{
     margin-top:7px;
 }
 #main{
-height: 95%;
-width: 100%;
-text-align: center;
+    height: 95%;
+    width: 100%;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -53,10 +53,10 @@ a:hover {
     
 }
 @keyframes animation{
-0% {text-shadow: 0 0 1px dodgerblue;}
-33% {text-shadow: 0 0 2px crimson;}
-66% {text-shadow: 0 0 1px darkorange;}
-100% {text-shadow: 0 0 2px limegreen;}}
+    0% {text-shadow: 0 0 1px dodgerblue;}
+    33% {text-shadow: 0 0 2px crimson;}
+    66% {text-shadow: 0 0 1px darkorange;}
+    100% {text-shadow: 0 0 2px limegreen;}}
 
 @keyframes blinker 
 {
@@ -68,11 +68,11 @@ a:hover {
 }
 @keyframes heading 
 {
-0%{text-shadow: 0 0 1px rgb(26, 136, 170);}
-40%{text-shadow: 0 0 2px rgb(26, 136, 170);}
-50%{text-shadow: 0 0 3.5px rgb(26, 136, 170);}
-60%{text-shadow: 0 0 2px rgb(26, 136, 170);}
-100%{text-shadow: 0 0 1px rgb(26, 136, 170);}
+    0%{text-shadow: 0 0 1px rgb(26, 136, 170);}
+    40%{text-shadow: 0 0 2px rgb(26, 136, 170);}
+    50%{text-shadow: 0 0 3.5px rgb(26, 136, 170);}
+    60%{text-shadow: 0 0 2px rgb(26, 136, 170);}
+    100%{text-shadow: 0 0 1px rgb(26, 136, 170);}
 }
 @keyframes neon 
 {
