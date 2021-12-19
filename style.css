@@ -26,10 +26,10 @@ body{
     
 }
 #accs{
-    display: none;
+    display: block;
 }
 #settings{
-    display: block;
+    display: none;
 }
 #cfgs{
     display: none;
