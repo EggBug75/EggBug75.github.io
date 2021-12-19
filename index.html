@@ -1,33 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Limbo</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon"  type="image/x-icon" sizes="16×16" href="ok.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="container">
-            <div id="top">
-                
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Limbo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@500&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <h3 id='logo'>Limbo</h3>
+            <div id="links">
+                <ul>
+                    <li onClick='Accs()' id='accs_button'>Acc's</li>
+                    <li onClick='Settings()' id='settings_button'>Settings</li>
+                    <li onClick='cfgs()' id='cfgs_button'>Clarity/interium cfg</li>
+                    <li onClick='music()' id='music_button'>Music</li>
+                </ul>
             </div>
-            <div id="main">
-                <h3>Acc's:</h3>
-                <a href="https://steamcommunity.com/id/skdo/">Main</a> <br>
-                <a href="https://steamcommunity.com/id/skdq/">Limbo</a> <br>
-                <a href="https://steamcommunity.com/id/nygerspoko/">N*g*rCool</a> <br>
-		<a href="https://steamcommunity.com/id/skdp/">2055</a> <br>
-		<a href="https://steamcommunity.com/id/sqdo/">UK drill</a> <br>
-                <h3>Music:</h3>
-                <a href="https://soundcloud.com/xyz-ooo-693173195">SoundCloud</a> <br>
-                <h3>Limbo#4477</h3>
-            </div>
-            <footer>
-                Limbo 2021 &copy;
-            </footer>
+            <h3 id='dc'>Limbo#4477</h3>
         </div>
-    </body>
+        <div id="main">
+            <div id="accs">
+                <ul>
+                    <li style='font-size:130%;text-shadow: 0px 0px 14px white;'><h1 >Acc's:</h1></li><br><br>
+                    <li><a href="https://steamcommunity.com/id/skdo/">Main</a></li>
+                    <li><a href="https://steamcommunity.com/id/nygerspoko/">N*g*rCool</a></li>
+                    <li><a href="https://steamcommunity.com/id/skdq/">Limbo</a></li>
+                    <li><a href="https://steamcommunity.com/id/skdp/">2055</a></li>
+                    <li><a href="https://steamcommunity.com/id/sqdo/">UK Drill</a></li>
+                </ul>
+            </div>
+            <div id="settings">
+                <ul>
+                <li style='font-size:130%;text-shadow: 0px 0px 14px white;'><h1 >Settings</h1></li><br><br><br>
+                <li>Sens: 1.7</li>
+                <li>Dpi: 1200</li>
+                <li>Res: 4/3 1280×960</li>
+                </ul>
+            </div>
+            <div id="cfgs">
+                <h1>SOON</h1>
+            </div>
+            <div id="music">
+                <h1>SOON</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Accs(){
+            document.getElementById('accs').style.display='Block';
+            document.getElementById('accs_button').style.color='rgba(255,255,255,0.5)';
+            document.getElementById('settings').style.display='none';
+            document.getElementById('settings_button').style.color='white';
+            document.getElementById('cfgs').style.display='none';
+            document.getElementById('cfgs_button').style.color='white';
+            document.getElementById('music').style.display='none';
+            document.getElementById('music_button').style.color='white';
+        }
+        function Settings(){
+            document.getElementById('accs').style.display='none';
+            document.getElementById('accs_button').style.color='white';
+            document.getElementById('settings').style.display='Block';
+            document.getElementById('settings_button').style.color='rgba(255,255,255,0.5)';
+            document.getElementById('cfgs').style.display='none';
+            document.getElementById('cfgs_button').style.color='white';
+            document.getElementById('music').style.display='none';
+            document.getElementById('music_button').style.color='white';
+        }
+        function cfgs(){
+            document.getElementById('accs').style.display='none';
+            document.getElementById('accs_button').style.color='white';
+            document.getElementById('settings').style.display='none';
+            document.getElementById('settings_button').style.color='white';
+            document.getElementById('cfgs').style.display='Block';
+            document.getElementById('cfgs_button').style.color='rgba(255,255,255,0.5)';
+            document.getElementById('music').style.display='none';
+            document.getElementById('music_button').style.color='white';
+        }
+        function music(){
+            document.getElementById('accs').style.display='none';
+            document.getElementById('accs_button').style.color='white';
+            document.getElementById('settings').style.display='none';
+            document.getElementById('settings_button').style.color='white';
+            document.getElementById('cfgs').style.display='none';
+            document.getElementById('cfgs_button').style.color='white';
+            document.getElementById('music').style.display='Block';
+            document.getElementById('music_button').style.color='rgba(255,255,255,0.5)';
+        }
+    </script>
+</body>
 </html>
