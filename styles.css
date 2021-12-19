@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     body{
         background: radial-gradient(ellipse at bottom, #0D1E31, #111);
@@ -62,7 +62,7 @@
     }
     
 }
-@media (max-width: 1000px) and (min-width: 700px) {
+@media (max-width: 1000px) and (min-width: 600px) {
 
     body{
         background: radial-gradient(ellipse at bottom, #0D1E31, #111);
