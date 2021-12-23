@@ -1,3 +1,4 @@
+/*@media (max-width: 1000px) and (min-width: 600px)*/
 *{
     margin:0;
     padding:0;
@@ -7,23 +8,6 @@
 body{
     background-image: url("bg.jpg");
     /*background: linear-gradient(to right top, rgb(255, 255, 142), rgb(167, 224, 61));*/
-}
-#container{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-#main{
-    display: flex;
-    width: 80%;
-    height: 70%;
-    border: 2px solid green;
-    color:white;
-    text-align: center;
-    justify-content: center;
-    
 }
 #accs{
     display: block;
@@ -55,36 +39,7 @@ body{
 #accs ul li{
     margin-top: 10px;
 }
-#nav{
-    display: flex;
-    width: 80%;
-    height: 10%;
-    justify-content: space-between;
-    align-items: center;
-    padding:30px;
-    border: 2px solid green;
-    margin-top: 20px;
-}
-#links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-    color: white;
-}
-#links ul li:hover{
-    color: rgba(255,255,255,0.5);
-    text-shadow: 0px 0px 14px green;
-    cursor: pointer;
-}
-#dc{
-    color:White;
-    text-shadow: 0px 0px 14px white;
-}
-#logo{
-    font-size: 200%;
-    color:white;
-    text-shadow: 0px 0px 14px white;
-}
+
 #logo:hover{
 cursor: pointer;
 text-shadow: 0px 0px 30px lightgreen;
@@ -99,4 +54,118 @@ text-shadow: 0px 0px 30px lightgreen;
     font-size: 150%;
     margin-top:10px;
     
+}
+#music ul{
+    list-style: none;
+    margin-top: 55px;
+    
+}
+#music ul li{
+    font-size: 150%; 
+    margin-top:10px;
+}
+#music ul li a{
+    text-decoration: none;
+    color:white;
+}
+#music ul li a:hover{
+    text-decoration: none;
+    color:lightgreen;
+    text-shadow: 0px 0px 20px lightgreen;
+}
+#logo{
+    font-size: 200%;
+    color:white;
+    text-shadow: 0px 0px 14px white;
+}
+@media (min-width: 900px){
+    #container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    #main{
+        display: flex;
+        width: 80%;
+        height: 70%;
+        border: 2px solid green;
+        color:white;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    #nav{
+        display: flex;
+        width: 80%;
+        height: 10%;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px;
+        border: 2px solid green;
+        margin-top: 20px;
+    }
+    #links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+        color: white;
+    }
+    #links ul li:hover{
+        color: rgba(255,255,255,0.5);
+        text-shadow: 0px 0px 14px green;
+        cursor: pointer;
+    }
+    #dc{
+        color:White;
+        text-shadow: 0px 0px 14px white;
+    }
+}
+@media (max-width: 900px){
+    #container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+    #main{
+        display: flex;
+        width: 70%;
+        height: 80%;
+        border: 2px solid green;
+        color:white;
+        text-align: center;
+        justify-content: center;
+        margin:5%;
+        
+    }
+    #nav{
+        width: 20%;
+        height: 80%;
+        margin:5%;
+        border: 2px solid green;
+        text-align: center;
+        position: relative;
+        min-width: 150px;
+    }
+    #links ul li{
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+        color: white;
+    }
+    #links ul li:hover{
+        color: rgba(255,255,255,0.5);
+        text-shadow: 0px 0px 14px green;
+        cursor: pointer;
+    }
+    #dc{
+        color:White;
+        text-shadow: 0px 0px 14px white;
+        position: absolute;
+        bottom:5px;
+        left:15%;
+    }
 }
