@@ -142,9 +142,10 @@ text-shadow: 0px 0px 30px lightgreen;
         text-align: center;
         justify-content: center;
         margin:5%;
-        
+        min-height: 400px;
     }
     #nav{
+        padding-top: 10px;
         width: 20%;
         height: 80%;
         margin:5%;
@@ -152,6 +153,7 @@ text-shadow: 0px 0px 30px lightgreen;
         text-align: center;
         position: relative;
         min-width: 150px;
+        min-height: 400px;
     }
     #links ul li{
         list-style: none;
@@ -170,11 +172,5 @@ text-shadow: 0px 0px 30px lightgreen;
         position: absolute;
         bottom:5px;
         left:15%;
-    }
-    #main{
-        min-height: 400px;
-    }
-    #nav{
-        min-height: 400px;
     }
 }
