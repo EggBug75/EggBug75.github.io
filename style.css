@@ -81,6 +81,9 @@ text-shadow: 0px 0px 30px lightgreen;
     color:white;
     text-shadow: 0px 0px 14px white;
 }
+#nav #links #accs_button{
+    color:rgba(255,255,255,0.5);
+}
 @media (min-width: 900px){
     #container{
         height: 100vh;
