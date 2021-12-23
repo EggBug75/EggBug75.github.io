@@ -9,6 +9,9 @@ body{
     background-image: url("bg.jpg");
     /*background: linear-gradient(to right top, rgb(255, 255, 142), rgb(167, 224, 61));*/
 }
+#main{
+    min-height: 400px;
+}
 #accs{
     display: block;
 }
@@ -94,7 +97,7 @@ text-shadow: 0px 0px 30px lightgreen;
         color:white;
         text-align: center;
         justify-content: center;
-        
+        margin-top:10px;
     }
     #nav{
         display: flex;
@@ -167,5 +170,11 @@ text-shadow: 0px 0px 30px lightgreen;
         position: absolute;
         bottom:5px;
         left:15%;
+    }
+    #main{
+        min-height: 400px;
+    }
+    #nav{
+        min-height: 400px;
     }
 }
