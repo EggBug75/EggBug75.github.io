@@ -13,7 +13,6 @@ body{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    align-items: center;
 }
 #menu{
     width: 90%;
@@ -40,6 +39,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top:100px;
 }
 #footer{
     width: 90%;
