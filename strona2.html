@@ -241,8 +241,12 @@ Khmer<br>
     document.getElementById("niechce").onmouseover = function()
     {
         document.getElementById('nie').style.display = 'none';
-        
         document.getElementById('nie2').style.display = 'inline';
+    }
+    document.getElementById("niechce").onmouseout = function()
+    {
+        document.getElementById('nie').style.display = 'inline';
+        document.getElementById('nie2').style.display = 'none';
     }
     </script>
 </body>
