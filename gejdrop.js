@@ -94,6 +94,13 @@ function Start() {
     var petle = 50000;
     var opoznienie = 0;
     var przerwa = 10;
+
+    var nazwySkrzyni = skrzynie.map(function (skrzynia) {
+        return skrzynia.nazwa;
+    });
+    var tekst = "Wyszukiwanie bitw dla skrzyń: " + nazwySkrzyni.join(", ");
+    console.log(tekst);
+
     for (let i = 0; i < petle; i++) {
         delay(opoznienie).then(() => check());
         opoznienie += przerwa;
@@ -101,10 +108,18 @@ function Start() {
 }
 
 function check() {
-    if (document.querySelector('.css-d45wua').querySelectorAll('.w-fit')[0].getElementsByTagName('svg').length) {
-        var element = document.querySelector('.css-d45wua').querySelectorAll('.my-10')[0];
-        if (skrzynie.some(skrzynia => element.textContent.includes(skrzynia.nazwa))) {
-            document.getElementsByClassName("button ml-1 mr-5 h-12 w-auto flex-1 button-green-dimmed")[0].click();
+    var currentURL = window.location.href;
+    if (currentURL.includes("https://key-drop.com/pl/case-battle/list")){
+        var cena = document.querySelector('.css-d45wua').querySelectorAll('.w-fit')[0];
+        if (cena && cena.getElementsByTagName('svg').length) {
+            var element = document.querySelector('.css-d45wua').querySelectorAll('.my-10')[0];
+            if (skrzynie.some(skrzynia => element.textContent.includes(skrzynia.nazwa))) {
+                var guzik = document.getElementsByClassName("button ml-1 mr-5 h-12 w-auto flex-1 button-green-dimmed")[0];
+                if(guzik){
+                    guzik.click();
+                    console.log("Dołączono do bitwy")
+                }
+            }
         }
     }
 }
